@@ -1,9 +1,9 @@
 import streamlit as st
 from PIL import Image
 
-img_logo = Image.open(r"C:\Users\jeroe\OneDrive - TU Eindhoven\Website_SG.()\SG_logo.png")
-img_us_theme = Image.open(r"C:\Users\jeroe\OneDrive - TU Eindhoven\Website_SG.()\SG_Iedereen.jpg")
-img_bar_sep = Image.open(r"C:\Users\jeroe\OneDrive - TU Eindhoven\Website_SG.()\SG_bar.png")
+img_logo = Image.open(r"SG_logo.png")
+img_us_theme = Image.open(r"SG_Iedereen.jpg")
+img_bar_sep = Image.open(r"SG_bar.png")
 
 
 st.set_page_config(page_title='Studie.Gezelligheid()', page_icon=img_logo, layout="wide")
@@ -40,7 +40,7 @@ elif bio == 'Activiteiten':
                      ## Activiteiten
                      """)
     st.write("### Pannenkoeken avond")
-    st.image(Image.open(r"C:\Users\jeroe\OneDrive - TU Eindhoven\Website_SG.()\SG_pannenkoek.jpg"),width=200)
+    st.image(Image.open(r"SG_pannenkoek.jpg"),width=200)
     st.write("""
              **Datum is 11-05-2023**\n
              **Locatie: Joep thuis**\n
