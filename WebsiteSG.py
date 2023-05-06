@@ -82,7 +82,7 @@ elif bio == 'Activiteiten':
     st.write("### Graswandeling Picnic Editie")
     #st.image(Image.open(r"C:\Users\jeroe\OneDrive - TU Eindhoven\Website_SG.()\SG_pannenkoek.jpg"), width=200)
     st.write("""
-                 **Datum is 17-05-2023**\n
+                 **Datum is 21-05-2023**\n
                  **Locatie: Naast de Dommel op campus**\n
                  Tijd om lekker in de natuur te genieten van een stukje puur natuur, een dikke jonko!\n
                  Een heerlijk middagje muziek, munchies en lachkickjes. Het is weer ultiem chillen geblazen!
