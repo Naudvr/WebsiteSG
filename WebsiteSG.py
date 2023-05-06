@@ -33,7 +33,7 @@ if bio == 'Home':
     with st.container():
         st.image(img_bar_sep, use_column_width="always")
     st.markdown("""
-             ### Hallo Studie.Gezelligheid() mensen op onze volledige eigen website!!\n
+             ### Hallo Studie.Gezelligheid() mensen op onze volledig eigen website!!\n
              Op deze website kunnen we al onze activiteiten zien zodat iedereen precies weet waar en wanneer we wat kunnen doen!\n 
              Want heel eerlijk, ik houd al die shit niet meer bij.\n
              Ook zijn op deze website al onze mooie kiekjes te vinden zodat we altijd kunnen genieten van onze prachtige snoetjes :)
