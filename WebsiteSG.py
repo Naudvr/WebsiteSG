@@ -137,7 +137,7 @@ elif bio == 'Activiteiten':
         Name2 = st.text_input("Typ hier alsjeblieft je naam :)  ")
         Submit2 = st.button("Schrijf me in!  ")
         if Submit2 and Name2 != "":
-            doc_ref1.update({Name2: Name2})
+            doc_ref2.update({Name2: Name2})
             st.write("Je bent ingeschreven!")
         elif Submit2 and Name2 == "":
             st.error("Vul alstublieft eerst een naam in")
@@ -171,7 +171,7 @@ elif bio == 'Activiteiten':
         Name3 = st.text_input("Typ hier alsjeblieft je naam :)   ")
         Submit3 = st.button("Schrijf me in!   ")
         if Submit3 and Name3 != "":
-            doc_ref1.update({Name3: Name3})
+            doc_ref3.update({Name3: Name3})
             st.write("Je bent ingeschreven!")
         elif Submit3 and Name3 == "":
             st.error("Vul alstublieft eerst een naam in")
