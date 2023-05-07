@@ -108,7 +108,7 @@ elif bio == 'Afgehuurde Lokalen':
         st.error("Vul alsjeblieft een tijd in")
     elif Toevoegen and Locatie == "" and Tijd == "":
         st.error("Vul alsjeblieft een locatie en tijd in")
-    elif Toevoegen and Locatie != "" and Tijd != "" and Tijd[1]=="/" and Tijd[4]=="/":
+    elif Toevoegen and Locatie != "" and Tijd != "" and Tijd[1]=="/" and Tijd[3]=="/":
         st.error("Gebruik asljeblieft de juiste notatie voor de datum")
     elif Toevoegen and Locatie != "" and Tijd != "" and Tijd[1]=="/":
         st.error("Gebruik asljeblieft de juiste notatie voor de datum")
