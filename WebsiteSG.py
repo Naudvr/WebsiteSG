@@ -133,7 +133,7 @@ elif bio == 'Activiteiten':
         doc_ref = db_Website.collection("Activiteiten").document("Pannenkoeken")
         doc = doc_ref.get()
         if not doc.exists:
-            doc_ref.set({"Inschrijvingen":"Inschrijvingen"})
+            doc_ref.set({"Inschrijvingen":" "})
         doc = doc_ref.get()
         if doc.exists:
             Name_Dict = doc.to_dict()
