@@ -70,7 +70,7 @@ if bio == 'Home':
              Ook zijn op deze website al onze mooie kiekjes te vinden zodat we altijd kunnen genieten van onze prachtige snoetjes :)
              """)
 elif bio == 'Gereserveerde Lokalen':
-    col1, col2, col3, col4, col5 = st.columns(5, gap="small")
+    col1, col2, col3 = st.columns(3, gap="small")
     with col3:
         st.markdown("""
                          ## Gereserveerde Lokalen
@@ -116,8 +116,8 @@ elif bio == 'Gereserveerde Lokalen':
         st.error("Vul alsjeblieft een locatie en tijd in")
 
 elif bio == 'Activiteiten':
-    ol1, col2, col3 = st.columns(3, gap="small")
-    with col2:
+    ol1, col2, col3, col4, col5 = st.columns(5, gap="small")
+    with col3:
         st.markdown("""
                      ## Activiteiten
                      """)
