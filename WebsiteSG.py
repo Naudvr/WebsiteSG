@@ -116,8 +116,8 @@ elif bio == 'Gereserveerde Lokalen':
         st.error("Vul alsjeblieft een locatie en tijd in")
 
 elif bio == 'Activiteiten':
-    ol1, col2, col3, col4, col5 = st.columns(5, gap="small")
-    with col3:
+    ol1, col2, col3 = st.columns(3, gap="small")
+    with col2:
         st.markdown("""
                      ## Activiteiten
                      """)
