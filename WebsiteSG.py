@@ -108,6 +108,8 @@ elif bio == 'Afgehuurde Lokalen':
         st.error("Vul alsjeblieft een tijd in")
     elif Toevoegen and Locatie == "" and Tijd == "":
         st.error("Vul alsjeblieft een locatie en tijd in")
+    elif Toevoegen and Locatie != "" and Tijd != "" and Tijd[1]=="/" or Tijd[4]=="/":
+        st.error("Gebruik asljeblieft de juiste notatie voor de datum")
 
 elif bio == 'Activiteiten':
     ol1, col2, col3, col4, col5 = st.columns(5, gap="small")
