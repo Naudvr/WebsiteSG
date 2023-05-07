@@ -99,7 +99,13 @@ elif bio == 'Afgehuurde Lokalen':
     Locatie = st.text_input("Typ hier alsjeblieft de locatie van het lokaal")
     Tijd = st.text_input("Typ hier alsjeblieft de datum en tijd wanneer je het lokaal hebt afgehuurd", placeholder="DD/MM/YYYY HH:MM-HH:MM")
     Toevoegen = st.button("Voeg mijn lokaal toe")
-    if Toevoegen and Locatie != "" and Tijd != "":
+    if Toevoegen and Locatie != "" and Tijd != "" and Tijd[1]=="/" and Tijd[3]=="/":
+        st.error("Gebruik alsjeblieft de juiste notatie voor de datum")
+    elif Toevoegen and Locatie != "" and Tijd != "" and Tijd[1]=="/":
+        st.error("Gebruik alsjeblieft de juiste notatie voor de datum")
+    elif Toevoegen and Locatie != "" and Tijd != "" and Tijd[4]=="/":
+        st.error("Gebruik alsjeblieft de juiste notatie voor de datum")
+    elif Toevoegen and Locatie != "" and Tijd != "":
         Doc_af_ref.update({Tijd: Locatie})
         st.write("Lokaal is toegevoegd!")
     elif Toevoegen and Locatie == "" and Tijd != "":
@@ -108,12 +114,6 @@ elif bio == 'Afgehuurde Lokalen':
         st.error("Vul alsjeblieft een tijd in")
     elif Toevoegen and Locatie == "" and Tijd == "":
         st.error("Vul alsjeblieft een locatie en tijd in")
-    elif Toevoegen and Locatie != "" and Tijd != "" and Tijd[1]=="/" and Tijd[3]=="/":
-        st.error("Gebruik alsjeblieft de juiste notatie voor de datum")
-    elif Toevoegen and Locatie != "" and Tijd != "" and Tijd[1]=="/":
-        st.error("Gebruik alsjeblieft de juiste notatie voor de datum")
-    elif Toevoegen and Locatie != "" and Tijd != "" and Tijd[4]=="/":
-        st.error("Gebruik alsjeblieft de juiste notatie voor de datum")
 
 elif bio == 'Activiteiten':
     ol1, col2, col3, col4, col5 = st.columns(5, gap="small")
