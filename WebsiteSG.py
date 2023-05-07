@@ -71,7 +71,7 @@ if bio == 'Home':
              """)
 elif bio == 'Gereserveerde Lokalen':
     col1, col2, col3 = st.columns(3, gap="small")
-    with col3:
+    with col2:
         st.markdown("""
                          ## Gereserveerde Lokalen
                          """)
