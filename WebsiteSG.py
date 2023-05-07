@@ -19,7 +19,7 @@ with(col1b):
 with(col5b):
     st.image(img_logo, width=80)
 
-bio = st.radio('Choose an option:',['Home','Activiteiten','Afgehuurde Lokalen','Fotos'],horizontal=True)
+bio = st.radio('Choose an option:',['Home','Activiteiten','Gereserveerde Lokalen','Fotos'],horizontal=True)
 st.image(img_bar_sep, use_column_width="always")
 
 if bio == 'Home':
@@ -69,7 +69,7 @@ if bio == 'Home':
              Want heel eerlijk, ik houd al die shit niet meer bij.\n
              Ook zijn op deze website al onze mooie kiekjes te vinden zodat we altijd kunnen genieten van onze prachtige snoetjes :)
              """)
-elif bio == 'Afgehuurde Lokalen':
+elif bio == 'Gereserveerde Lokalen':
     col1, col2, col3, col4, col5 = st.columns(5, gap="small")
     with col3:
         st.markdown("""
