@@ -73,7 +73,7 @@ elif bio == 'Gereserveerde Lokalen':
     col1, col2, col3, col4, col5 = st.columns(5, gap="small")
     with col3:
         st.markdown("""
-                         ## Afgehuurde Lokalen
+                         ## Gereserveerde Lokalen
                          """)
     Doc_af_ref = db_Website.collection("Lokalen").document("Afgehuurd")
     doc_af = Doc_af_ref.get()
