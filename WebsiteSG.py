@@ -260,6 +260,40 @@ elif bio == 'Activiteiten':
     st.write("      ")
     st.write("      ")
     st.write("      ")
+    st.write("### Borrel Protagoras")
+    # st.image(Image.open(r"C:\Users\jeroe\OneDrive - TU Eindhoven\Website_SG.()\SG_pannenkoek.jpg"), width=200)
+    st.write("""
+                     **Datum is 01-06-2023 Tijd: 16:00**\n
+                     **Locatie: In Vivo**\n
+                     Weer donderdag, dus tijd om te borrelen!\n
+                     """)
+    with st.expander("Inschrijven"):
+        doc_ref5 = db_Website.collection("Activiteiten").document("Borrel_01")
+        doc5 = doc_ref5.get()
+        if not doc5.exists:
+            doc_ref5.set({"Inschrijvingen": " "})
+        doc5 = doc_ref5.get()
+        if doc5.exists:
+            Name_Dict = doc5.to_dict()
+            Name_list = list(Name_Dict.values())
+            Name_length = len(Name_list)
+            for i in range(Name_length):
+                if Name_list[i] != " ":
+                    st.write(Name_list[i])
+        Name5 = st.text_input("Typ hier alsjeblieft je naam :)     ")
+        Submit5 = st.button("Schrijf me in!     ")
+        if Submit5 and Name5 != "":
+            doc_ref4.update({Name5: Name5})
+            st.success("Je bent ingeschreven!")
+        elif Submit5 and Name5 == "":
+            st.error("Vul alstublieft eerst een naam in")
+    st.write("      ")
+    st.write("      ")
+    st.write("      ")
+    st.write("      ")
+    st.write("      ")
+    st.write("      ")
+    st.write("      ")
     st.write("### Graswandeling")
     # st.image(Image.open(r"C:\Users\jeroe\OneDrive - TU Eindhoven\Website_SG.()\SG_pannenkoek.jpg"), width=200)
     st.write("""
