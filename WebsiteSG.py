@@ -16,8 +16,8 @@ Pass_Dict = Doc_Pass.to_dict()
 Pass_list = list(Pass_Dict.values())
 
 st.sidebar.title("MySugarFlow")
-Password = st.text_input("Typ hier het wachtwoord")
-Login = st.checkbox("Vink aan om in te loggen")
+Password = st.sidebar.text_input("Typ hier het wachtwoord")
+Login = st.sidebar.checkbox("Vink aan om in te loggen")
 if Password == Pass_list[0] and Login:
     st.success("Yay")
 
