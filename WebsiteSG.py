@@ -145,7 +145,7 @@ elif bio == 'Activiteiten':
         Submit = st.button("Schrijf me in!")
         if Submit and Name != "":
             doc_ref.update({Name:Name})
-            st.write("Je bent ingeschreven!")
+            st.succes("Je bent ingeschreven!")
         elif Submit and Name == "":
             st.error("Vul alstublieft eerst een naam in")
     st.write("      ")
@@ -181,7 +181,7 @@ elif bio == 'Activiteiten':
         Submit1 = st.button("Schrijf me in! ")
         if Submit1 and Name1 != "":
             doc_ref1.update({Name1: Name1})
-            st.write("Je bent ingeschreven!")
+            st.succes("Je bent ingeschreven!")
         elif Submit1 and Name1 == "":
             st.error("Vul alstublieft eerst een naam in")
     st.write("      ")
@@ -216,7 +216,7 @@ elif bio == 'Activiteiten':
         Submit2 = st.button("Schrijf me in!  ")
         if Submit2 and Name2 != "":
             doc_ref2.update({Name2: Name2})
-            st.write("Je bent ingeschreven!")
+            st.succes("Je bent ingeschreven!")
         elif Submit2 and Name2 == "":
             st.error("Vul alstublieft eerst een naam in")
     st.write("      ")
@@ -250,6 +250,6 @@ elif bio == 'Activiteiten':
         Submit3 = st.button("Schrijf me in!   ")
         if Submit3 and Name3 != "":
             doc_ref3.update({Name3: Name3})
-            st.write("Je bent ingeschreven!")
+            st.succes("Je bent ingeschreven!")
         elif Submit3 and Name3 == "":
             st.error("Vul alstublieft eerst een naam in")
