@@ -53,13 +53,13 @@ if bio == 'Home':
                 Doc_af_ref.update({Tijd_list[i]: firestore.DELETE_FIELD})
             if day > Today_day and month > Today_mon and year < Today_year:
                 Doc_af_ref.update({Tijd_list[i]: firestore.DELETE_FIELD})
-    col1, col2, col3 = st.columns(3,gap="small")
-    with col2:
+    col1, col2 = st.columns(2,gap="small")
+    with col1:
         st.markdown("""
                  ## Welkom gezellige studiemensen!
                  """)
     col1l, col2l, col3l, col4l, col5l = st.columns(5, gap="large")
-    with col2l:
+    with col1l:
         st.image(img_us_theme, width=1000)
     with st.container():
         st.image(img_bar_sep, use_column_width="always")
