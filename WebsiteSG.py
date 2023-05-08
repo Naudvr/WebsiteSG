@@ -122,13 +122,13 @@ elif bio == 'Quotes':
                      """)
     doc_ref_q = db_Website.collection("Quotes").document("Ingevulde quotes")
     doc_q = doc_ref_q.get()
-        if doc_q.exists:
-            Quote_Dict = doc.to_dict()
-            Quote_list = list(Quote_Dict.values())
-            Quote_length = len(Quote_list)
-            for i in range(Quote_length):
-                if Quote_list[i] != " ":
-                    st.write(Quote_list[i])
+    if doc_q.exists:
+        Quote_Dict = doc.to_dict()
+        Quote_list = list(Quote_Dict.values())
+        Quote_length = len(Quote_list)
+        for i in range(Quote_length):
+            if Quote_list[i] != " ":
+                st.write(Quote_list[i])
     Quote = st.text_input("Typ hier alsjeblieft je geweldige quote", placeholder="Naam: Quote")
     Toevoegen = st.button("Voeg de quote toe!")
     if Toevoegen and Quote != "":
