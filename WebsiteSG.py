@@ -119,8 +119,8 @@ if Password == Pass_list[0] and Login:
             st.error("Gebruik alsjeblieft de juiste notatie voor de datum")
         elif Toevoegen and Locatie != "" and Tijd != "":
             Doc_af_ref.update({Tijd: Locatie})
-            Locatie = st.text_input("Typ hier alsjeblieft de locatie van het lokaal", value="")
-            Tijd = st.text_input("Typ hier alsjeblieft de locatie van het lokaal", value="")
+            Locatie = ""
+            Tijd = ""
             st.success("Lokaal is toegevoegd!")
         elif Toevoegen and Locatie == "" and Tijd != "":
             st.error("Vul alsjeblieft een locatie in")
