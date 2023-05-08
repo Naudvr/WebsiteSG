@@ -53,9 +53,8 @@ if bio == 'Home':
                 Doc_af_ref.update({Tijd_list[i]: firestore.DELETE_FIELD})
             if day > Today_day and month > Today_mon and year < Today_year:
                 Doc_af_ref.update({Tijd_list[i]: firestore.DELETE_FIELD})
-    col1, col2, col3, col4, col5 = st.columns(5,gap="small")
-    with col3:
-        st.markdown("""
+    col1, col2, col3 = st.columns([1, 3, 1]
+    col2.markdown("""
                  ## Welkom gezellige studiemensen!
                  """)
     col1l, col2l, col3l, col4l, col5l, col6l, col7l = st.columns(7, gap="large")
