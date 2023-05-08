@@ -283,7 +283,7 @@ elif bio == 'Activiteiten':
         Name5 = st.text_input("Typ hier alsjeblieft je naam :)     ")
         Submit5 = st.button("Schrijf me in!     ")
         if Submit5 and Name5 != "":
-            doc_ref4.update({Name5: Name5})
+            doc_ref5.update({Name5: Name5})
             st.success("Je bent ingeschreven!")
         elif Submit5 and Name5 == "":
             st.error("Vul alstublieft eerst een naam in")
