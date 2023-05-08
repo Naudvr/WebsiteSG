@@ -212,7 +212,7 @@ elif bio == 'Activiteiten':
                 if Name_list[i] != " ":
                     st.write(Name_list[i])
         Name4 = st.text_input("Typ hier alsjeblieft je naam :)    ")
-        Submit4 = st.button("Schrijf me in!  ")
+        Submit4 = st.button("Schrijf me in!    ")
         if Submit4 and Name4 != "":
             doc_ref4.update({Name4: Name4})
             st.success("Je bent ingeschreven!")
