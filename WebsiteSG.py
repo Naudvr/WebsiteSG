@@ -18,7 +18,7 @@ Pass_list = list(Pass_Dict.values())
 st.set_page_config(page_title='Studie.Gezelligheid()', page_icon=img_logo, layout="wide")
 
 st.sidebar.title("Studie.Gezelligheid()")
-Password = st.sidebar.text_input("Typ hier het wachtwoord")
+Password = st.sidebar.text_input("Typ hier het wachtwoord", type="password")
 Login = st.sidebar.checkbox("Vink aan om in te loggen")
 if Password == Pass_list[0] and Login:
     
