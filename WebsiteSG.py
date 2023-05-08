@@ -160,8 +160,8 @@ elif bio == 'Activiteiten':
     st.write("""
                  **Datum is 21-05-2023**\n
                  **Locatie: Naast de Dommel op campus**\n
-                 Tijd om lekker in de natuur te genieten van een stukje puur natuur, een dikke jonko!\n
-                 Een heerlijk middagje muziek, munchies en lachkickjes. Het is weer ultiem chillen geblazen!
+                 Tijd om in de natuur lekker te genieten van een stukje púúr natuur, moeder aarde der ultieme gift, zaza!\n
+                 Een heerlijk middagje muziek, munchies en lachkickjes. Zoals Snoop Dogg zei: 'Smoke weed every day!'
                  """)
     with st.expander("Inschrijven"):
         doc_ref1 = db_Website.collection("Activiteiten").document("GraswandelingPicnicEditie")
@@ -195,7 +195,8 @@ elif bio == 'Activiteiten':
     st.write("""
                      **Datum is 27-05-2023 tot 29-05-2023**\n
                      **Locatie: Door heel Eindhoven**\n
-                     -\n
+                     Weekendje Eindhoven en omgeving onveilig te maken ft. deze stichting van hele gezellige idioten ;).\n
+                     08/05 12:30 ATLAS 6 MEETING OM PROGRAMMA TE BEDENKEN.
                      """)
     with st.expander("Inschrijven"):
         doc_ref2 = db_Website.collection("Activiteiten").document("VriendenWeekend")
@@ -229,7 +230,7 @@ elif bio == 'Activiteiten':
     st.write("""
                                      **Datum is 11-06-2023**\n
                                      **Locatie: TBA**\n
-                                     -\n
+                                     Zoals Snoop Dogg zei 'Smoke weed every day'. Nog meer munchies en nog meer lachkikjes.\n
                                      """)
     with st.expander("Inschrijven"):
         doc_ref3 = db_Website.collection("Activiteiten").document("Graswandeling")
