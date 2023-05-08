@@ -19,7 +19,7 @@ with(col1b):
 with(col5b):
     st.image(img_logo, width=80)
 
-bio = st.radio('Choose an option:',['Home','Activiteiten','Gereserveerde Lokalen','Quotes','Fotos'],horizontal=True)
+bio = st.radio('Choose an option:',['Home','Activiteiten','Gereserveerde Lokalen','Quotes'],horizontal=True)
 st.image(img_bar_sep, use_column_width="always")
 
 if bio == 'Home':
