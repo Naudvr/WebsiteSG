@@ -123,7 +123,7 @@ elif bio == 'Quotes':
     doc_ref_q = db_Website.collection("Quotes").document("Ingevulde quotes")
     doc_q = doc_ref_q.get()
     if doc_q.exists:
-        Quote_Dict = doc.to_dict()
+        Quote_Dict = doc_q.to_dict()
         Quote_list = list(Quote_Dict.values())
         Quote_length = len(Quote_list)
         for i in range(Quote_length):
