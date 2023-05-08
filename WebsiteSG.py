@@ -132,7 +132,7 @@ elif bio == 'Quotes':
     Quote = st.text_input("Typ hier alsjeblieft je geweldige quote", placeholder="Naam: Quote")
     Toevoegen = st.button("Voeg de quote toe!")
     if Toevoegen and Quote != "":
-        doc_ref_q.update({"Quote": Quote})
+        doc_ref_q.update({Quote: Quote})
         st.success("Je hebt je quote geplaatst!")
     elif Toevoegen and Quote == "":
         st.error("Vul alsjeblieft een quote in")
@@ -163,7 +163,7 @@ elif bio == 'Activiteiten':
             Name_length = len(Name_list)
             for i in range(Name_length):
                 if Name_list[i] != " ":
-                    st.write(Name_list[i])
+                    st.write(str(Name_list[i]))
         Name = st.text_input("Typ hier alsjeblieft je naam :)")
         Submit = st.button("Schrijf me in!")
         if Submit and Name != "":
@@ -199,7 +199,7 @@ elif bio == 'Activiteiten':
             Name_length = len(Name_list)
             for i in range(Name_length):
                 if Name_list[i] != " ":
-                    st.write(Name_list[i])
+                    st.write(str(Name_list[i]))
         Name1 = st.text_input("Typ hier alsjeblieft je naam :) ")
         Submit1 = st.button("Schrijf me in! ")
         if Submit1 and Name1 != "":
@@ -233,7 +233,7 @@ elif bio == 'Activiteiten':
             Name_length = len(Name_list)
             for i in range(Name_length):
                 if Name_list[i] != " ":
-                    st.write(Name_list[i])
+                    st.write(str(Name_list[i]))
         Name4 = st.text_input("Typ hier alsjeblieft je naam :)    ")
         Submit4 = st.button("Schrijf me in!    ")
         if Submit4 and Name4 != "":
@@ -268,7 +268,7 @@ elif bio == 'Activiteiten':
             Name_length = len(Name_list)
             for i in range(Name_length):
                 if Name_list[i] != " ":
-                    st.write(Name_list[i])
+                    st.write(str(Name_list[i]))
         Name2 = st.text_input("Typ hier alsjeblieft je naam :)  ")
         Submit2 = st.button("Schrijf me in!  ")
         if Submit2 and Name2 != "":
@@ -302,7 +302,7 @@ elif bio == 'Activiteiten':
             Name_length = len(Name_list)
             for i in range(Name_length):
                 if Name_list[i] != " ":
-                    st.write(Name_list[i])
+                    st.write(str(Name_list[i]))
         Name5 = st.text_input("Typ hier alsjeblieft je naam :)     ")
         Submit5 = st.button("Schrijf me in!     ")
         if Submit5 and Name5 != "":
@@ -336,7 +336,7 @@ elif bio == 'Activiteiten':
             Name_length = len(Name_list)
             for i in range(Name_length):
                 if Name_list[i] != " ":
-                    st.write(Name_list[i])
+                    st.write(str(Name_list[i]))
         Name3 = st.text_input("Typ hier alsjeblieft je naam :)   ")
         Submit3 = st.button("Schrijf me in!   ")
         if Submit3 and Name3 != "":
