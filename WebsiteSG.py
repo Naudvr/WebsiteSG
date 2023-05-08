@@ -135,7 +135,7 @@ elif bio == 'Quotes':
         Quote_Dict = doc_q.to_dict()
         Quote_list = list(Quote_Dict.values())
         Quote_length = len(Quote_list)
-        doc_ref_q.update({Quote_length: Quote})
+        doc_ref_q.update({str(Quote_length): Quote})
         st.success("Je hebt je quote geplaatst!")
     elif Toevoegen and Quote == "":
         st.error("Vul alsjeblieft een quote in")
