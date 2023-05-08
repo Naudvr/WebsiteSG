@@ -19,7 +19,7 @@ with(col1b):
 with(col5b):
     st.image(img_logo, width=80)
 
-bio = st.radio('Choose an option:',['Home','Activiteiten','Gereserveerde Lokalen','Fotos'],horizontal=True)
+bio = st.radio('Choose an option:',['Home','Activiteiten','Gereserveerde Lokalen','Quotes','Fotos'],horizontal=True)
 st.image(img_bar_sep, use_column_width="always")
 
 if bio == 'Home':
@@ -113,7 +113,30 @@ elif bio == 'Gereserveerde Lokalen':
         st.error("Vul alsjeblieft een tijd in")
     elif Toevoegen and Locatie == "" and Tijd == "":
         st.error("Vul alsjeblieft een locatie en tijd in")
-
+        
+elif bio == 'Quotes':
+    ol1, col2, col3, col4, col5 = st.columns(5, gap="small")
+    with col3:
+        st.markdown("""
+                     ## Quotes
+                     """)
+    doc_ref_q = db_Website.collection("Quotes").document("Ingevulde quotes")
+    doc_q = doc_ref_q.get()
+        if doc_q.exists:
+            Quote_Dict = doc.to_dict()
+            Quote_list = list(Quote_Dict.values())
+            Quote_length = len(Quote_list)
+            for i in range(Quote_length):
+                if Quote_list[i] != " ":
+                    st.write(Quote_list[i])
+    Quote = st.text_input("Typ hier alsjeblieft je geweldige quote", placeholder="Naam: Quote")
+    Toevoegen = st.button("Voeg de quote toe!")
+    if Toevoegen and Quote != "":
+        doc_ref_q.update({Quote:Quote})
+        st.success("Je hebt je quote geplaatst!")
+    elif Toevoegen and Quote == "":
+        st.error("Vul alsjeblieft een quote in")
+    
 elif bio == 'Activiteiten':
     ol1, col2, col3, col4, col5 = st.columns(5, gap="small")
     with col3:
