@@ -128,7 +128,7 @@ elif bio == 'Quotes':
         Quote_length = len(Quote_list)
         for i in range(Quote_length):
             if Quote_list[i] != " ":
-                st.write(**Quote_list[i]**)
+                st.write(Quote_list[i])
     Quote = st.text_input("Typ hier alsjeblieft je geweldige quote", placeholder="Naam: Quote")
     Toevoegen = st.button("Voeg de quote toe!")
     if Toevoegen and Quote != "":
