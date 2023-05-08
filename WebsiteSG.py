@@ -10,6 +10,16 @@ img_logo = Image.open("SG_logo.png")
 img_us_theme = Image.open("SG_Iedereen.jpg")
 img_bar_sep = Image.open("SG_bar.png")
 
+Doc_Pass_ref = db_Website.collection("Activiteiten").document("Key")
+Doc_Pass = Doc_Pass_ref.get()
+Pass_Dict = Doc_Pass.to_dict()
+Pass_list = list(Tijd_Locatie_Dict.values())
+
+st.sidebar.title("MySugarFlow")
+Password = st.text_input("Typ hier het wachtwoord")
+Login = st.checkbox("Vink aan om in te loggen")
+if Password == Pass_list[0] and Login:
+    st.success("Yay")
 
 
 st.set_page_config(page_title='Studie.Gezelligheid()', page_icon=img_logo, layout="wide")
