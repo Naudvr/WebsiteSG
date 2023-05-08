@@ -15,14 +15,16 @@ Doc_Pass = Doc_Pass_ref.get()
 Pass_Dict = Doc_Pass.to_dict()
 Pass_list = list(Pass_Dict.values())
 
-st.sidebar.title("MySugarFlow")
+st.set_page_config(page_title='Studie.Gezelligheid()', page_icon=img_logo, layout="wide")
+
+st.sidebar.title("Studie.Gezelligheid()")
 Password = st.sidebar.text_input("Typ hier het wachtwoord")
 Login = st.sidebar.checkbox("Vink aan om in te loggen")
 if Password == Pass_list[0] and Login:
     st.success("Yay")
 
 
-st.set_page_config(page_title='Studie.Gezelligheid()', page_icon=img_logo, layout="wide")
+
 col1b, col2b, col3b, col4b, col5b = st.columns(5, gap="large")
 with(col1b):
     st.title("Studie.Gezelligheid()")
