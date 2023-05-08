@@ -121,7 +121,7 @@ elif bio == 'Activiteiten':
                      ## Activiteiten
                      """)
     st.write("### Pannenkoeken avond")
-    st.image(Image.open("SG_pannenkoek.jpg"),width=200)
+    #st.image(Image.open("SG_pannenkoek.jpg"),width=200)
     st.write("""
              **Datum is 11-05-2023**\n
              **Locatie: Joep thuis**\n
