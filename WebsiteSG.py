@@ -158,8 +158,8 @@ elif bio == 'Activiteiten':
     st.write("### Graswandeling Picnic Editie")
     #st.image(Image.open(r"C:\Users\jeroe\OneDrive - TU Eindhoven\Website_SG.()\SG_pannenkoek.jpg"), width=200)
     st.write("""
-                 **Datum is 21-05-2023**\n
-                 **Locatie: Naast de Dommel op campus**\n
+                 **Datum is 21-05-2023, Tijd: 13:00**\n
+                 **Locatie: Naast de Dommel op campus, meeten appie station**\n
                  Tijd om in de natuur lekker te genieten van een stukje púúr natuur, moeder aarde der ultieme gift, zaza!\n
                  Een heerlijk middagje muziek, munchies en lachkickjes. Zoals Snoop Dogg zei: 'Smoke weed every day!'
                  """)
