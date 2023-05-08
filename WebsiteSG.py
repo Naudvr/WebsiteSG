@@ -197,7 +197,7 @@ elif bio == 'Activiteiten':
                      **Datum is 27-05-2023 tot 29-05-2023**\n
                      **Locatie: Door heel Eindhoven**\n
                      Weekendje Eindhoven en omgeving onveilig te maken ft. deze stichting van hele gezellige idioten ;).\n
-                     08/05 12:30 ATLAS 6 MEETING OM PROGRAMMA TE BEDENKEN.
+                     08/05 12:45 MEETING OM PROGRAMMA TE BEDENKEN.
                      """)
     with st.expander("Inschrijven"):
         doc_ref2 = db_Website.collection("Activiteiten").document("VriendenWeekend")
