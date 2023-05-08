@@ -170,7 +170,10 @@ elif bio == 'Activiteiten':
         Name = st.text_input("Typ hier alsjeblieft je naam :)")
         Submit = st.button("Schrijf me in!")
         if Submit and Name != "":
-            doc_ref.update({Name:Name})
+            Name_Dict = doc.to_dict()
+            Name_list = list(Name_Dict.values())
+            Name_length = len(Name_list)
+            doc_ref.update({str(Name_length):Name})
             st.success("Je bent ingeschreven!")
         elif Submit and Name == "":
             st.error("Vul alstublieft eerst een naam in")
@@ -206,7 +209,10 @@ elif bio == 'Activiteiten':
         Name1 = st.text_input("Typ hier alsjeblieft je naam :) ")
         Submit1 = st.button("Schrijf me in! ")
         if Submit1 and Name1 != "":
-            doc_ref1.update({Name1: Name1})
+            Name_Dict = doc1.to_dict()
+            Name_list = list(Name_Dict.values())
+            Name_length = len(Name_list)
+            doc_ref1.update({str(Name_length): Name1})
             st.success("Je bent ingeschreven!")
         elif Submit1 and Name1 == "":
             st.error("Vul alstublieft eerst een naam in")
@@ -240,7 +246,10 @@ elif bio == 'Activiteiten':
         Name4 = st.text_input("Typ hier alsjeblieft je naam :)    ")
         Submit4 = st.button("Schrijf me in!    ")
         if Submit4 and Name4 != "":
-            doc_ref4.update({Name4: Name4})
+            Name_Dict = doc4.to_dict()
+            Name_list = list(Name_Dict.values())
+            Name_length = len(Name_list)
+            doc_ref4.update({str(Name_length): Name4})
             st.success("Je bent ingeschreven!")
         elif Submit4 and Name4 == "":
             st.error("Vul alstublieft eerst een naam in")
@@ -275,7 +284,10 @@ elif bio == 'Activiteiten':
         Name2 = st.text_input("Typ hier alsjeblieft je naam :)  ")
         Submit2 = st.button("Schrijf me in!  ")
         if Submit2 and Name2 != "":
-            doc_ref2.update({Name2: Name2})
+            Name_Dict = doc2.to_dict()
+            Name_list = list(Name_Dict.values())
+            Name_length = len(Name_list)
+            doc_ref2.update({str(Name_length): Name2})
             st.success("Je bent ingeschreven!")
         elif Submit2 and Name2 == "":
             st.error("Vul alstublieft eerst een naam in")
@@ -309,7 +321,10 @@ elif bio == 'Activiteiten':
         Name5 = st.text_input("Typ hier alsjeblieft je naam :)     ")
         Submit5 = st.button("Schrijf me in!     ")
         if Submit5 and Name5 != "":
-            doc_ref5.update({Name5: Name5})
+            Name_Dict = doc5.to_dict()
+            Name_list = list(Name_Dict.values())
+            Name_length = len(Name_list)
+            doc_ref5.update({str(Name_length): Name5})
             st.success("Je bent ingeschreven!")
         elif Submit5 and Name5 == "":
             st.error("Vul alstublieft eerst een naam in")
@@ -343,7 +358,10 @@ elif bio == 'Activiteiten':
         Name3 = st.text_input("Typ hier alsjeblieft je naam :)   ")
         Submit3 = st.button("Schrijf me in!   ")
         if Submit3 and Name3 != "":
-            doc_ref3.update({Name3: Name3})
+            Name_Dict = doc3.to_dict()
+            Name_list = list(Name_Dict.values())
+            Name_length = len(Name_list)
+            doc_ref3.update({str(Name_length): Name3})
             st.success("Je bent ingeschreven!")
         elif Submit3 and Name3 == "":
             st.error("Vul alstublieft eerst een naam in")
