@@ -106,7 +106,7 @@ elif bio == 'Gereserveerde Lokalen':
         st.error("Gebruik alsjeblieft de juiste notatie voor de datum")
     elif Toevoegen and Locatie != "" and Tijd != "":
         Doc_af_ref.update({Tijd: Locatie})
-        st.write("Lokaal is toegevoegd!")
+        st.success("Lokaal is toegevoegd!")
     elif Toevoegen and Locatie == "" and Tijd != "":
         st.error("Vul alsjeblieft een locatie in")
     elif Toevoegen and Locatie != "" and Tijd == "":
@@ -145,7 +145,7 @@ elif bio == 'Activiteiten':
         Submit = st.button("Schrijf me in!")
         if Submit and Name != "":
             doc_ref.update({Name:Name})
-            st.succes("Je bent ingeschreven!")
+            st.success("Je bent ingeschreven!")
         elif Submit and Name == "":
             st.error("Vul alstublieft eerst een naam in")
     st.write("      ")
@@ -181,7 +181,7 @@ elif bio == 'Activiteiten':
         Submit1 = st.button("Schrijf me in! ")
         if Submit1 and Name1 != "":
             doc_ref1.update({Name1: Name1})
-            st.succes("Je bent ingeschreven!")
+            st.success("Je bent ingeschreven!")
         elif Submit1 and Name1 == "":
             st.error("Vul alstublieft eerst een naam in")
     st.write("      ")
@@ -216,7 +216,7 @@ elif bio == 'Activiteiten':
         Submit2 = st.button("Schrijf me in!  ")
         if Submit2 and Name2 != "":
             doc_ref2.update({Name2: Name2})
-            st.succes("Je bent ingeschreven!")
+            st.success("Je bent ingeschreven!")
         elif Submit2 and Name2 == "":
             st.error("Vul alstublieft eerst een naam in")
     st.write("      ")
@@ -250,6 +250,6 @@ elif bio == 'Activiteiten':
         Submit3 = st.button("Schrijf me in!   ")
         if Submit3 and Name3 != "":
             doc_ref3.update({Name3: Name3})
-            st.succes("Je bent ingeschreven!")
+            st.success("Je bent ingeschreven!")
         elif Submit3 and Name3 == "":
             st.error("Vul alstublieft eerst een naam in")
