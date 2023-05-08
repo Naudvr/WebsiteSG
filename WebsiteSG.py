@@ -13,7 +13,7 @@ img_bar_sep = Image.open("SG_bar.png")
 Doc_Pass_ref = db_Website.collection("Activiteiten").document("Key")
 Doc_Pass = Doc_Pass_ref.get()
 Pass_Dict = Doc_Pass.to_dict()
-Pass_list = list(Tijd_Locatie_Dict.values())
+Pass_list = list(Pass_Dict.values())
 
 st.sidebar.title("MySugarFlow")
 Password = st.text_input("Typ hier het wachtwoord")
