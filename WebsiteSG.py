@@ -132,7 +132,10 @@ elif bio == 'Quotes':
     Quote = st.text_input("Typ hier alsjeblieft je geweldige quote", placeholder="Naam: Quote")
     Toevoegen = st.button("Voeg de quote toe!")
     if Toevoegen and Quote != "":
-        doc_ref_q.update({Quote: Quote})
+        Quote_Dict = doc_q.to_dict()
+        Quote_list = list(Quote_Dict.values())
+        Quote_length = len(Quote_list)
+        doc_ref_q.update({Quote_length: Quote})
         st.success("Je hebt je quote geplaatst!")
     elif Toevoegen and Quote == "":
         st.error("Vul alsjeblieft een quote in")
