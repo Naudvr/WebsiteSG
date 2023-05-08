@@ -59,7 +59,7 @@ if bio == 'Home':
                  ## Welkom gezellige studiemensen!
                  """)
     col1l, col2l, col3l, col4l, col5l, col6l, col7l = st.columns(7, gap="large")
-    with col3l:
+    with col2l:
         st.image(img_us_theme, width=1000)
     with st.container():
         st.image(img_bar_sep, use_column_width="always")
