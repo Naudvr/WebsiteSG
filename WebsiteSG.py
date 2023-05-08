@@ -161,7 +161,8 @@ elif bio == 'Activiteiten':
                  **Datum is 21-05-2023, Tijd: 13:00**\n
                  **Locatie: Naast de Dommel op campus, meeten appie station**\n
                  Tijd om in de natuur lekker te genieten van een stukje púúr natuur, moeder aarde der ultieme gift, zaza!\n
-                 Een heerlijk middagje muziek, munchies en lachkickjes. Zoals Snoop Dogg zei: 'Smoke weed every day!'
+                 Een heerlijk middagje muziek, munchies en lachkickjes. Zoals Snoop Dogg zei: 'Smoke weed every day!'\n
+                 Neem ook een picnic kleed of een lekkere camping stoel mee!
                  """)
     with st.expander("Inschrijven"):
         doc_ref1 = db_Website.collection("Activiteiten").document("GraswandelingPicnicEditie")
