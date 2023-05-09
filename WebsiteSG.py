@@ -163,7 +163,7 @@ if Password == Pass_list[0] and Login:
                   \n
                   ### Vrijdag avond:\n
                   **Avond eten**\n
-                  **Quiz night** Door Joep\n
+                  **Quiz night** \n
                   **Spelletjes avond**\n
                   **Film Kijken**\n
                   \n
