@@ -166,9 +166,9 @@ if Password == Pass_list[0] and Login:
                    \n
                   ### Zaterdag:\n
                   **Zaterdag ochtend:**\n
-                  *Heerlijk ontbijtje*\n
-                      Bij goed weer op campus\n
-                      Bij slecht weer thuis\n
+                  *Heerlijk ontbijtje:*\n
+                   Bij goed weer op campus\n
+                   Bij slecht weer thuis\n
                   **Zaterdag middag:**\n
                   
                   **Zaterdag avond:**\n
