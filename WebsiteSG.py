@@ -31,7 +31,7 @@ if Password == Pass_list[0] and Login:
     with(col5b):
         st.image(img_logo, width=80)
     
-    bio = st.radio('Choose an option:', ['Home', 'Activiteiten', 'Gereserveerde Lokalen', 'Quotes'], horizontal=True)
+    bio = st.radio('Choose an option:', ['Home', 'Activiteiten', 'Gereserveerde Lokalen', 'Quotes', 'Vriendenweekend Planning'], horizontal=True)
     st.image(img_bar_sep, use_column_width="always")
     
     if bio == 'Home':
@@ -152,6 +152,22 @@ if Password == Pass_list[0] and Login:
             st.success("Je hebt je quote geplaatst!")
         elif Toevoegen and Quote == "":
             st.error("Vul alsjeblieft een quote in")
+    
+    elif bio == 'Vriendenweekend Planning':
+        st.markdown("""
+                  # Planning Vriendenweekend:\n
+                  \n
+                  ## Vrijdag:\n
+                  \n
+                  ### Vrijdag avond:\n
+                  **Avond eten**\n
+                  **Quiz night** Door Joep\n
+                  **Spelletjes avond**\n
+                  **Film Kijken**\n
+                  \n
+                  ## Zaterdag:
+        
+        """)
     
     elif bio == 'Activiteiten':
         ol1, col2, col3, col4, col5 = st.columns(5, gap="small")
