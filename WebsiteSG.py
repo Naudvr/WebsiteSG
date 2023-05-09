@@ -170,8 +170,13 @@ if Password == Pass_list[0] and Login:
                    Bij goed weer op campus\n
                    Bij slecht weer thuis\n
                   **Zaterdag middag:**\n
-                  
+                  *In geval van goed weer:*\n
+                   Levend stratego en andere buitensporten\n
+                  *In geval van slecht weer:*\n
+                   Bowlen\n
                   **Zaterdag avond:**\n
+                  *BBQ bij Rian*
+                  *We all love the 80s festival*
                   
                   
         
