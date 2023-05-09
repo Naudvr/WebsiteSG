@@ -162,8 +162,7 @@ if Password == Pass_list[0] and Login:
                   *Quiz night* \n
                   *Spelletjes avond*\n
                   *Film Kijken*\n
-                   \n
-                   \n
+
                   ### Zaterdag:\n
                   **Zaterdag ochtend:**\n
                   *Heerlijk ontbijtje:*\n
@@ -175,10 +174,23 @@ if Password == Pass_list[0] and Login:
                   *In geval van slecht weer:*\n
                    Bowlen\n
                   **Zaterdag avond:**\n
-                  *BBQ bij Rian*
-                  *We all love the 80s festival*
+                  *BBQ bij Rian*\n
+                  *We all love the 80s festival*\n
                   
+                  ### Zondag:\n
+                  **Zondag ochtend:**\n
+                  *Heerlijk ontbijtje*\n
+                  **Zondag middag:**\n
+                  *Filmpje pakken tegen de kater*\n
+                  *Bakwedstrijd*\n
+                  **Zondag avond:**\n
+                  *Gangendiner*\n
                   
+                  ### Maandag:\n
+                  **Maandag ochtend:**\n
+                  *Heerlijk ontbijtje*\n
+                  **Maandag middag:**\n
+                  *Klimbos*
         
         """)
     
