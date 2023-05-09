@@ -157,13 +157,16 @@ if Password == Pass_list[0] and Login:
         st.markdown("""
                   # Planning Vriendenweekend:\n
                   \n
+                  \n
                   ## Vrijdag:\n
+                  \n
                   \n
                   ### Vrijdag avond:\n
                   **Avond eten**\n
                   **Quiz night** Door Joep\n
                   **Spelletjes avond**\n
                   **Film Kijken**\n
+                  \n
                   \n
                   ## Zaterdag:
         
