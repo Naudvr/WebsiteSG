@@ -156,11 +156,7 @@ if Password == Pass_list[0] and Login:
     elif bio == 'Vriendenweekend Planning':
         st.markdown("""
                   ## Planning Vriendenweekend:\n
-                  \n
-                  \n
                   ### Vrijdag:\n
-                   \n
-                   \n
                   **Vrijdag avond:**\n
                   *Avond eten*\n
                   *Quiz night* \n
@@ -168,7 +164,16 @@ if Password == Pass_list[0] and Login:
                   *Film Kijken*\n
                    \n
                    \n
-                  ### Zaterdag:
+                  ### Zaterdag:\n
+                  **Zaterdag ochtend:**\n
+                  *Heerlijk ontbijtje*\n
+                        Bij goed weer op campus\n
+                        Bij slecht weer thuis\n
+                  **Zaterdag middag:**\n
+                  
+                  **Zaterdag avond:**\n
+                  
+                  
         
         """)
     
