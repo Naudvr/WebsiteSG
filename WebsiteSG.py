@@ -246,7 +246,7 @@ if Password == Pass_list[0] and Login:
                  De grote Studiegezelligheid pannenkoeken avond!\n
                  Vol met pannenkoeken en gezelligheid!!
                  """
-        Activiteit("### Pannenkoeken avond",Descr_string,"Pannenkoeken,0)
+        Activiteit("### Pannenkoeken avond",Descr_string,"Pannenkoeken",0)
         st.write("      ")
         st.write("      ")
         st.write("      ")
