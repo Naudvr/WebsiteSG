@@ -255,6 +255,19 @@ if Password == Pass_list[0] and Login:
         st.write("      ")
         st.write("      ")
         st.write("      ")
+        Descr_string_7 ="""
+                 **Datum is 16-05-2023**\n
+                 **Locatie: TBA**
+                 -
+                 """ 
+        Activiteit("### Borrel XL",Descr_string_7,"BorrelXL",7)
+        st.write("      ")
+        st.write("      ")
+        st.write("      ")
+        st.write("      ")
+        st.write("      ")
+        st.write("      ")
+        st.write("      ")
         Descr_string_1 = """
                      **Datum is 21-05-2023, Tijd: 13:00**\n
                      **Locatie: Naast de Dommel op campus, meeten appie station**\n
