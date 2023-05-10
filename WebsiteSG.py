@@ -281,13 +281,13 @@ if Password == Pass_list[0] and Login:
         # st.image(Image.open(r"C:\Users\jeroe\OneDrive - TU Eindhoven\Website_SG.()\SG_pannenkoek.jpg"), width=200)
         st.write("""
                                          **Datum is 23-05-2023**\n
-                                         **Locatie: TBA**\n
+                                         **Locatie: Vila Fiesta**
                                          Het laatste BMT feest van dit jaar met als thema, pyjama party!\n
                                          [link](https://www.protagoras.tue.nl/studenten/vereniging/agenda/2508-bmt-feest-4)
                                          """)
         with st.expander("Inschrijven"):
             doc_ref6 = db_Website.collection("Activiteiten").document("BMTFeest4")
-            doc3 = doc_ref6.get()
+            doc6 = doc_ref6.get()
             if not doc6.exists:
                 doc_ref6.set({"Inschrijvingen": " "})
             doc6 = doc_ref6.get()
