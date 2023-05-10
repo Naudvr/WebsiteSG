@@ -283,38 +283,12 @@ if Password == Pass_list[0] and Login:
         st.write("      ")
         st.write("      ")
         st.write("      ")
-        st.write("### Borrel Protagoras")
-        # st.image(Image.open(r"C:\Users\jeroe\OneDrive - TU Eindhoven\Website_SG.()\SG_pannenkoek.jpg"), width=200)
-        st.write("""
-                         **Datum is 25-05-2023 Tijd: 16:00**\n
+        Descr_string_3 = """
+         **Datum is 25-05-2023 Tijd: 16:00**\n
                          **Locatie: In Vivo**\n
                          Weer donderdag, dus tijd om te borrelen!\n
-                         """)
-        with st.expander("Inschrijven"):
-            doc_ref4 = db_Website.collection("Activiteiten").document("Borrel_25")
-            doc4 = doc_ref4.get()
-            if not doc4.exists:
-                doc_ref4.set({"Inschrijvingen": " "})
-            doc4 = doc_ref4.get()
-            if doc4.exists:
-                Name_Dict = doc4.to_dict()
-                Name_list = list(Name_Dict.values())
-                Name_length = len(Name_list)
-                for i in range(Name_length):
-                    if Name_list[i] != " ":
-                        st.write(str(Name_list[i]))
-            Name4 = st.text_input("Typ hier alsjeblieft je naam :)    ")
-            Submit4 = st.button("Schrijf me in!    ")
-            if Submit4 and Name4 != "" and Name4 not in Name_list:
-                Name_Dict = doc4.to_dict()
-                Name_list = list(Name_Dict.values())
-                Name_length = len(Name_list)
-                doc_ref4.update({str(Name_length): Name4})
-                st.success("Je bent ingeschreven!")
-            elif Submit4 and Name4 != "" and Name4 in Name_list:
-                st.error("Je bent al ingeschreven")
-            elif Submit4 and Name4 == "":
-                st.error("Vul alstublieft eerst een naam in")
+         """
+        Activiteit("### Borrel Protagoras",Descr_string_3,"Borrel_25",3)
         st.write("      ")
         st.write("      ")
         st.write("      ")
@@ -322,39 +296,12 @@ if Password == Pass_list[0] and Login:
         st.write("      ")
         st.write("      ")
         st.write("      ")
-        st.write("### Vrienden Weekend")
-        # st.image(Image.open(r"C:\Users\jeroe\OneDrive - TU Eindhoven\Website_SG.()\SG_pannenkoek.jpg"), width=200)
-        st.write("""
-                         **Datum is 27-05-2023 tot 29-05-2023**\n
+        Descr_string_4 = """
+         **Datum is 27-05-2023 tot 29-05-2023**\n
                          **Locatie: Door heel Eindhoven**\n
                          Weekendje Eindhoven en omgeving onveilig te maken ft. deze stichting van hele gezellige idioten ;).\n
-                         08/05 12:45 MEETING OM PROGRAMMA TE BEDENKEN.
-                         """)
-        with st.expander("Inschrijven"):
-            doc_ref2 = db_Website.collection("Activiteiten").document("VriendenWeekend")
-            doc2 = doc_ref2.get()
-            if not doc2.exists:
-                doc_ref2.set({"Inschrijvingen": " "})
-            doc2 = doc_ref2.get()
-            if doc2.exists:
-                Name_Dict = doc2.to_dict()
-                Name_list = list(Name_Dict.values())
-                Name_length = len(Name_list)
-                for i in range(Name_length):
-                    if Name_list[i] != " ":
-                        st.write(str(Name_list[i]))
-            Name2 = st.text_input("Typ hier alsjeblieft je naam :)  ")
-            Submit2 = st.button("Schrijf me in!  ")
-            if Submit2 and Name2 != "" and Name2 not in Name_list:
-                Name_Dict = doc2.to_dict()
-                Name_list = list(Name_Dict.values())
-                Name_length = len(Name_list)
-                doc_ref2.update({str(Name_length): Name2})
-                st.success("Je bent ingeschreven!")
-            elif Submit2 and Name2 != "" and Name2 in Name_list:
-                st.error("Je bent al ingeschreven")
-            elif Submit2 and Name2 == "":
-                st.error("Vul alstublieft eerst een naam in")
+         """
+        Activiteit("### Vrienden Weekend",Descr_string_4,"VriendenWeekend",4)
         st.write("      ")
         st.write("      ")
         st.write("      ")
@@ -362,38 +309,12 @@ if Password == Pass_list[0] and Login:
         st.write("      ")
         st.write("      ")
         st.write("      ")
-        st.write("### Borrel Protagoras")
-        # st.image(Image.open(r"C:\Users\jeroe\OneDrive - TU Eindhoven\Website_SG.()\SG_pannenkoek.jpg"), width=200)
-        st.write("""
-                         **Datum is 01-06-2023 Tijd: 16:00**\n
+        Descr_string_5 = """
+         **Datum is 01-06-2023 Tijd: 16:00**\n
                          **Locatie: In Vivo**\n
                          Weer donderdag, dus tijd om te borrelen!\n
-                         """)
-        with st.expander("Inschrijven"):
-            doc_ref5 = db_Website.collection("Activiteiten").document("Borrel_01")
-            doc5 = doc_ref5.get()
-            if not doc5.exists:
-                doc_ref5.set({"Inschrijvingen": " "})
-            doc5 = doc_ref5.get()
-            if doc5.exists:
-                Name_Dict = doc5.to_dict()
-                Name_list = list(Name_Dict.values())
-                Name_length = len(Name_list)
-                for i in range(Name_length):
-                    if Name_list[i] != " ":
-                        st.write(str(Name_list[i]))
-            Name5 = st.text_input("Typ hier alsjeblieft je naam :)     ")
-            Submit5 = st.button("Schrijf me in!     ")
-            if Submit5 and Name5 != "" and Name5 not in Name_list:
-                Name_Dict = doc5.to_dict()
-                Name_list = list(Name_Dict.values())
-                Name_length = len(Name_list)
-                doc_ref5.update({str(Name_length): Name5})
-                st.success("Je bent ingeschreven!")
-            elif Submit5 and Name5 != "" and Name5 in Name_list:
-                st.error("Je bent al ingeschreven")
-            elif Submit5 and Name5 == "":
-                st.error("Vul alstublieft eerst een naam in")
+         """
+        Activiteit("### Borrel Protagoras",Descr_string_5,"Borrel_01",5)
         st.write("      ")
         st.write("      ")
         st.write("      ")
@@ -401,35 +322,9 @@ if Password == Pass_list[0] and Login:
         st.write("      ")
         st.write("      ")
         st.write("      ")
-        st.write("### Graswandeling")
-        # st.image(Image.open(r"C:\Users\jeroe\OneDrive - TU Eindhoven\Website_SG.()\SG_pannenkoek.jpg"), width=200)
-        st.write("""
-                                         **Datum is 11-06-2023**\n
-                                         **Locatie: TBA**\n
-                                         Zoals Snoop Dogg zei 'Smoke weed every day'. Nog meer munchies en nog meer lachkikjes.\n
-                                         """)
-        with st.expander("Inschrijven"):
-            doc_ref3 = db_Website.collection("Activiteiten").document("Graswandeling")
-            doc3 = doc_ref3.get()
-            if not doc3.exists:
-                doc_ref3.set({"Inschrijvingen": " "})
-            doc3 = doc_ref3.get()
-            if doc3.exists:
-                Name_Dict = doc3.to_dict()
-                Name_list = list(Name_Dict.values())
-                Name_length = len(Name_list)
-                for i in range(Name_length):
-                    if Name_list[i] != " ":
-                        st.write(str(Name_list[i]))
-            Name3 = st.text_input("Typ hier alsjeblieft je naam :)   ")
-            Submit3 = st.button("Schrijf me in!   ")
-            if Submit3 and Name3 != "" and Name3 not in Name_list:
-                Name_Dict = doc3.to_dict()
-                Name_list = list(Name_Dict.values())
-                Name_length = len(Name_list)
-                doc_ref3.update({str(Name_length): Name3})
-                st.success("Je bent ingeschreven!")
-            elif Submit3 and Name3 != "" and Name3 in Name_list:
-                st.error("Je bent al ingeschreven")
-            elif Submit3 and Name3 == "":
-                st.error("Vul alstublieft eerst een naam in")
+        Descr_string_6 = """
+         **Datum is 01-06-2023 Tijd: 16:00**\n
+                         **Locatie: In Vivo**\n
+                         Weer donderdag, dus tijd om te borrelen!\n
+         """
+        Activiteit("### Graswandeling",Descr_string_6,"Graswandeling",6)
