@@ -22,7 +22,7 @@ def Activiteit(Title,Description,Name_Activiteit,Amount_Activiteit):
             for i in range(Name_length):
                 if Name_list[i] != " ":
                     st.write(str(Name_list[i]))
-            st.write("*Hoeveelheid mensen ingeschreven: *"+str(Name_length))
+            st.write("Hoeveelheid mensen ingeschreven: "+str(Name_length))
         input_string = "Typ hier alsjeblieft je naam :)"+Amount_Activiteit*" "
         button_string = "Schrijf me in!"+Amount_Activiteit*" "
         Name = st.text_input(input_string)
