@@ -155,14 +155,20 @@ if Password == Pass_list[0] and Login:
     
     elif bio == 'Vriendenweekend Planning':
         st.markdown("""
-                  ## Planning Vriendenweekend:\n
+                  ## Planning Vriendenweekend:
+                  """)
+        col1v, col2v, col3v, col4v = st.columns(4, gap="large")
+        with col1v:
+            st.markdown("""
                   ### Vrijdag:\n
                   **Vrijdag avond:**\n
                   *Avond eten*\n
                   *Quiz night* \n
                   *Spelletjes avond*\n
                   *Film Kijken*\n
-
+                  """)
+        with col2v:
+            st.markdown("""
                   ### Zaterdag:\n
                   **Zaterdag ochtend:**\n
                   *Heerlijk ontbijtje:*\n
@@ -176,8 +182,10 @@ if Password == Pass_list[0] and Login:
                   **Zaterdag avond:**\n
                   *BBQ bij Rian*\n
                   *We all love the 80s festival*\n
-                  
-                  ### Zondag:\n
+                  """)
+        with col3v:
+            st.markdown("""
+                ### Zondag:\n
                   **Zondag ochtend:**\n
                   *Heerlijk ontbijtje*\n
                   **Zondag middag:**\n
@@ -185,14 +193,15 @@ if Password == Pass_list[0] and Login:
                   *Bakwedstrijd*\n
                   **Zondag avond:**\n
                   *Gangendiner*\n
-                  
+                  """)
+        with col4v:
+            st.markdown("""
                   ### Maandag:\n
                   **Maandag ochtend:**\n
                   *Heerlijk ontbijtje*\n
                   **Maandag middag:**\n
                   *Klimbos*
-        
-        """)
+                  """)
     
     elif bio == 'Activiteiten':
         ol1, col2, col3, col4, col5 = st.columns(5, gap="small")
