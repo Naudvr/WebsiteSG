@@ -273,12 +273,14 @@ if Password == Pass_list[0] and Login:
                         st.write(str(Name_list[i]))
             Name1 = st.text_input("Typ hier alsjeblieft je naam :) ")
             Submit1 = st.button("Schrijf me in! ")
-            if Submit1 and Name1 != "":
+            if Submit1 and Name1 != "" and Name1 not in Name_list:
                 Name_Dict = doc1.to_dict()
                 Name_list = list(Name_Dict.values())
                 Name_length = len(Name_list)
                 doc_ref1.update({str(Name_length): Name1})
                 st.success("Je bent ingeschreven!")
+            elif Submit1 and Name1 != "" and Name1 in Name_list:
+                st.error("Je bent al ingeschreven")
             elif Submit1 and Name1 == "":
                 st.error("Vul alstublieft eerst een naam in")
         st.write("      ")
@@ -311,12 +313,14 @@ if Password == Pass_list[0] and Login:
                         st.write(str(Name_list[i]))
             Name6 = st.text_input("Typ hier alsjeblieft je naam :)      ")
             Submit6 = st.button("Schrijf me in!      ")
-            if Submit6 and Name6 != "":
+            if Submit6 and Name6 != "" and Name6 not in Name_list:
                 Name_Dict = doc6.to_dict()
                 Name_list = list(Name_Dict.values())
                 Name_length = len(Name_list)
                 doc_ref6.update({str(Name_length): Name6})
                 st.success("Je bent ingeschreven!")
+            elif Submit6 and Name6 != "" and Name in Name_list:
+                st.error("Je bent al ingeschreven")
             elif Submit6 and Name6 == "":
                 st.error("Vul alstublieft eerst een naam in")
         st.write("      ")
@@ -348,12 +352,14 @@ if Password == Pass_list[0] and Login:
                         st.write(str(Name_list[i]))
             Name4 = st.text_input("Typ hier alsjeblieft je naam :)    ")
             Submit4 = st.button("Schrijf me in!    ")
-            if Submit4 and Name4 != "":
+            if Submit4 and Name4 != "" and Name4 not in Name_list:
                 Name_Dict = doc4.to_dict()
                 Name_list = list(Name_Dict.values())
                 Name_length = len(Name_list)
                 doc_ref4.update({str(Name_length): Name4})
                 st.success("Je bent ingeschreven!")
+            elif Submit4 and Name4 != "" and Name4 in Name_list:
+                st.error("Je bent al ingeschreven")
             elif Submit4 and Name4 == "":
                 st.error("Vul alstublieft eerst een naam in")
         st.write("      ")
@@ -386,12 +392,14 @@ if Password == Pass_list[0] and Login:
                         st.write(str(Name_list[i]))
             Name2 = st.text_input("Typ hier alsjeblieft je naam :)  ")
             Submit2 = st.button("Schrijf me in!  ")
-            if Submit2 and Name2 != "":
+            if Submit2 and Name2 != "" and Name2 not in Name_list:
                 Name_Dict = doc2.to_dict()
                 Name_list = list(Name_Dict.values())
                 Name_length = len(Name_list)
                 doc_ref2.update({str(Name_length): Name2})
                 st.success("Je bent ingeschreven!")
+            elif Submit2 and Name2 != "" and Name2 in Name_list:
+                st.error("Je bent al ingeschreven")
             elif Submit2 and Name2 == "":
                 st.error("Vul alstublieft eerst een naam in")
         st.write("      ")
@@ -423,12 +431,14 @@ if Password == Pass_list[0] and Login:
                         st.write(str(Name_list[i]))
             Name5 = st.text_input("Typ hier alsjeblieft je naam :)     ")
             Submit5 = st.button("Schrijf me in!     ")
-            if Submit5 and Name5 != "":
+            if Submit5 and Name5 != "" and Name5 not in Name_list:
                 Name_Dict = doc5.to_dict()
                 Name_list = list(Name_Dict.values())
                 Name_length = len(Name_list)
                 doc_ref5.update({str(Name_length): Name5})
                 st.success("Je bent ingeschreven!")
+            elif Submit5 and Name5 != "" and Name5 in Name_list:
+                st.error("Je bent al ingeschreven")
             elif Submit5 and Name5 == "":
                 st.error("Vul alstublieft eerst een naam in")
         st.write("      ")
@@ -460,11 +470,13 @@ if Password == Pass_list[0] and Login:
                         st.write(str(Name_list[i]))
             Name3 = st.text_input("Typ hier alsjeblieft je naam :)   ")
             Submit3 = st.button("Schrijf me in!   ")
-            if Submit3 and Name3 != "":
+            if Submit3 and Name3 != "" and Name3 not in Name_list:
                 Name_Dict = doc3.to_dict()
                 Name_list = list(Name_Dict.values())
                 Name_length = len(Name_list)
                 doc_ref3.update({str(Name_length): Name3})
                 st.success("Je bent ingeschreven!")
+            elif Submit3 and Name3 != "" and Name3 in Name_list:
+                st.error("Je bent al ingeschreven")
             elif Submit3 and Name3 == "":
                 st.error("Vul alstublieft eerst een naam in")
