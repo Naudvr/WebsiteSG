@@ -232,12 +232,14 @@ if Password == Pass_list[0] and Login:
                         st.write(str(Name_list[i]))
             Name = st.text_input("Typ hier alsjeblieft je naam :)")
             Submit = st.button("Schrijf me in!")
-            if Submit and Name != "":
+            if Submit and Name != "" and Name not in Name_list:
                 Name_Dict = doc.to_dict()
                 Name_list = list(Name_Dict.values())
                 Name_length = len(Name_list)
                 doc_ref.update({str(Name_length): Name})
                 st.success("Je bent ingeschreven!")
+            elif Submit and Name != "" and Name in Name_list:
+                st.error("Je bent al ingeschreven")
             elif Submit and Name == "":
                 st.error("Vul alstublieft eerst een naam in")
         st.write("      ")
