@@ -285,8 +285,8 @@ if Password == Pass_list[0] and Login:
         st.write("      ")
         Descr_string_3 = """
          **Datum is 25-05-2023 Tijd: 16:00**\n
-                         **Locatie: In Vivo**\n
-                         Weer donderdag, dus tijd om te borrelen!\n
+         **Locatie: In Vivo**\n
+         Weer donderdag, dus tijd om te borrelen!\n
          """
         Activiteit("### Borrel Protagoras",Descr_string_3,"Borrel_25",3)
         st.write("      ")
@@ -298,8 +298,8 @@ if Password == Pass_list[0] and Login:
         st.write("      ")
         Descr_string_4 = """
          **Datum is 27-05-2023 tot 29-05-2023**\n
-                         **Locatie: Door heel Eindhoven**\n
-                         Weekendje Eindhoven en omgeving onveilig te maken ft. deze stichting van hele gezellige idioten ;).\n
+         **Locatie: Door heel Eindhoven**\n
+         Weekendje Eindhoven en omgeving onveilig te maken ft. deze stichting van hele gezellige idioten ;).\n
          """
         Activiteit("### Vrienden Weekend",Descr_string_4,"VriendenWeekend",4)
         st.write("      ")
@@ -311,8 +311,8 @@ if Password == Pass_list[0] and Login:
         st.write("      ")
         Descr_string_5 = """
          **Datum is 01-06-2023 Tijd: 16:00**\n
-                         **Locatie: In Vivo**\n
-                         Weer donderdag, dus tijd om te borrelen!\n
+         **Locatie: In Vivo**\n
+         Weer donderdag, dus tijd om te borrelen!\n
          """
         Activiteit("### Borrel Protagoras",Descr_string_5,"Borrel_01",5)
         st.write("      ")
@@ -323,8 +323,8 @@ if Password == Pass_list[0] and Login:
         st.write("      ")
         st.write("      ")
         Descr_string_6 = """
-         **Datum is 01-06-2023 Tijd: 16:00**\n
-                         **Locatie: In Vivo**\n
-                         Weer donderdag, dus tijd om te borrelen!\n
+         **Datum is 11-06-2023 Tijd: TBA**\n
+         **Locatie: TBA**\n
+         Een heerlijk middagje muziek, munchies en lachkickjes. Zoals Snoop Dogg zei: 'Smoke weed every day!'\n
          """
         Activiteit("### Graswandeling",Descr_string_6,"Graswandeling",6)
