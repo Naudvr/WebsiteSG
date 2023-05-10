@@ -276,6 +276,44 @@ if Password == Pass_list[0] and Login:
         st.write("      ")
         st.write("      ")
         st.write("      ")
+        st.write("      "))
+        st.write("### BMT Feest 4")
+        # st.image(Image.open(r"C:\Users\jeroe\OneDrive - TU Eindhoven\Website_SG.()\SG_pannenkoek.jpg"), width=200)
+        st.write("""
+                                         **Datum is 23-05-2023**\n
+                                         **Locatie: TBA**\n
+                                         Het laatste BMT feest van dit jaar met als thema, pyjama party!\n
+                                         [link](https://www.protagoras.tue.nl/studenten/vereniging/agenda/2508-bmt-feest-4)
+                                         """)
+        with st.expander("Inschrijven"):
+            doc_ref6 = db_Website.collection("Activiteiten").document("BMTFeest4")
+            doc3 = doc_ref6.get()
+            if not doc6.exists:
+                doc_ref6.set({"Inschrijvingen": " "})
+            doc6 = doc_ref6.get()
+            if doc6.exists:
+                Name_Dict = doc6.to_dict()
+                Name_list = list(Name_Dict.values())
+                Name_length = len(Name_list)
+                for i in range(Name_length):
+                    if Name_list[i] != " ":
+                        st.write(str(Name_list[i]))
+            Name6 = st.text_input("Typ hier alsjeblieft je naam :)      ")
+            Submit6 = st.button("Schrijf me in!      ")
+            if Submit6 and Name6 != "":
+                Name_Dict = doc6.to_dict()
+                Name_list = list(Name_Dict.values())
+                Name_length = len(Name_list)
+                doc_ref6.update({str(Name_length): Name6})
+                st.success("Je bent ingeschreven!")
+            elif Submit6 and Name6 == "":
+                st.error("Vul alstublieft eerst een naam in")
+        st.write("      ")
+        st.write("      ")
+        st.write("      ")
+        st.write("      ")
+        st.write("      ")
+        st.write("      ")
         st.write("      ")
         st.write("### Borrel Protagoras")
         # st.image(Image.open(r"C:\Users\jeroe\OneDrive - TU Eindhoven\Website_SG.()\SG_pannenkoek.jpg"), width=200)
