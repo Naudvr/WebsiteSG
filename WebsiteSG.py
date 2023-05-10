@@ -276,7 +276,7 @@ if Password == Pass_list[0] and Login:
         st.write("      ")
         st.write("      ")
         st.write("      ")
-        st.write("      "))
+        st.write("      ")
         st.write("### BMT Feest 4")
         # st.image(Image.open(r"C:\Users\jeroe\OneDrive - TU Eindhoven\Website_SG.()\SG_pannenkoek.jpg"), width=200)
         st.write("""
