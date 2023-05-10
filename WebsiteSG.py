@@ -269,7 +269,7 @@ if Password == Pass_list[0] and Login:
         st.write("      ")
         st.write("      ")
         st.write("      ")
-         Descr_string_2 = """
+        Descr_string_2 = """
          **Datum is 23-05-2023**\n
          **Locatie: Vila Fiesta**\n
          Het laatste BMT feest van dit jaar met als thema, pyjama party!\n
