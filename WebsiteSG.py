@@ -19,10 +19,10 @@ def Activiteit(Title,Description,Name_Activiteit,Amount_Activiteit):
             Name_Dict = doc.to_dict()
             Name_list = list(Name_Dict.values())
             Name_length = len(Name_list)
+            st.write("Hoeveelheid mensen ingeschreven: "+str(Name_length-1))
             for i in range(Name_length):
                 if Name_list[i] != " ":
                     st.write(str(Name_list[i]))
-            st.write("Hoeveelheid mensen ingeschreven: "+str(Name_length-1))
         input_string = "Typ hier alsjeblieft je naam :)"+Amount_Activiteit*" "
         button_string = "Schrijf me in!"+Amount_Activiteit*" "
         Name = st.text_input(input_string)
