@@ -270,11 +270,11 @@ if Password == Pass_list[0] and Login:
         st.write("      ")
         st.write("      ")
          Descr_string_2 = """
-                          **Datum is 23-05-2023**\n
-                          **Locatie: Vila Fiesta**\n
-                          Het laatste BMT feest van dit jaar met als thema, pyjama party!\n
-                          Link naar Prot website](https://www.protagoras.tue.nl/studenten/vereniging/agenda/2508-bmt-feest-4)
-                          """
+         **Datum is 23-05-2023**\n
+         **Locatie: Vila Fiesta**\n
+         Het laatste BMT feest van dit jaar met als thema, pyjama party!\n
+         Link naar Prot website](https://www.protagoras.tue.nl/studenten/vereniging/agenda/2508-bmt-feest-4)
+         """
         Activiteit("### BMT Feest 4",Descr_string_2,"BMTFeest4",2)
         st.write("      ")
         st.write("      ")
