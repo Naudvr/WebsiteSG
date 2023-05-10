@@ -10,7 +10,7 @@ def Activiteit(Title,Description,Name_Activiteit,Amount_Activiteit):
     # st.image(Image.open("SG_pannenkoek.jpg"),width=200)
     st.write(Description)
     with st.expander("Inschrijven"):
-        doc_ref = db_Website.collection("Activiteiten").document(Naam_Activiteit)
+        doc_ref = db_Website.collection("Activiteiten").document(Name_Activiteit)
         doc = doc_ref.get()
         if not doc.exists:
             doc_ref.set({"Inschrijvingen": " "})
