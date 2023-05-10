@@ -37,6 +37,14 @@ def Activiteit(Title,Description,Name_Activiteit,Amount_Activiteit):
             st.error("Je bent al ingeschreven")
         elif Submit and Name == "":
             st.error("Vul alstublieft eerst een naam in")
+        
+        st.write("      ")
+        st.write("      ")
+        st.write("      ")
+        st.write("      ")
+        st.write("      ")
+        st.write("      ")
+        st.write("      ")
 
 img_logo = Image.open("SG_logo.png")
 img_us_theme = Image.open("SG_Iedereen.jpg")
