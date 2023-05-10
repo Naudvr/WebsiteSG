@@ -254,40 +254,14 @@ if Password == Pass_list[0] and Login:
         st.write("      ")
         st.write("      ")
         st.write("      ")
-        st.write("### Graswandeling Picnic Editie")
-        # st.image(Image.open(r"C:\Users\jeroe\OneDrive - TU Eindhoven\Website_SG.()\SG_pannenkoek.jpg"), width=200)
-        st.write("""
+        Descr_string_1 = """
                      **Datum is 21-05-2023, Tijd: 13:00**\n
                      **Locatie: Naast de Dommel op campus, meeten appie station**\n
                      Tijd om in de natuur lekker te genieten van een stukje púúr natuur, moeder aarde der ultieme gift, zaza!\n
                      Een heerlijk middagje muziek, munchies en lachkickjes. Zoals Snoop Dogg zei: 'Smoke weed every day!'\n
                      Neem ook een picnic kleed of een lekkere camping stoel mee!
-                     """)
-        with st.expander("Inschrijven"):
-            doc_ref1 = db_Website.collection("Activiteiten").document("GraswandelingPicnicEditie")
-            doc1 = doc_ref1.get()
-            if not doc1.exists:
-                doc_ref1.set({"Inschrijvingen": " "})
-            doc1 = doc_ref1.get()
-            if doc1.exists:
-                Name_Dict = doc1.to_dict()
-                Name_list = list(Name_Dict.values())
-                Name_length = len(Name_list)
-                for i in range(Name_length):
-                    if Name_list[i] != " ":
-                        st.write(str(Name_list[i]))
-            Name1 = st.text_input("Typ hier alsjeblieft je naam :) ")
-            Submit1 = st.button("Schrijf me in! ")
-            if Submit1 and Name1 != "" and Name1 not in Name_list:
-                Name_Dict = doc1.to_dict()
-                Name_list = list(Name_Dict.values())
-                Name_length = len(Name_list)
-                doc_ref1.update({str(Name_length): Name1})
-                st.success("Je bent ingeschreven!")
-            elif Submit1 and Name1 != "" and Name1 in Name_list:
-                st.error("Je bent al ingeschreven")
-            elif Submit1 and Name1 == "":
-                st.error("Vul alstublieft eerst een naam in")
+                     """
+        Activiteit("### Graswandeling Picnic Editie",Descr_string_1,"GraswandelingPicnicEditie",1)
         st.write("      ")
         st.write("      ")
         st.write("      ")
