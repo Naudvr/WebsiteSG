@@ -257,7 +257,7 @@ if Password == Pass_list[0] and Login:
         st.write("      ")
         Descr_string_7 ="""
                  **Datum is 16-05-2023**\n
-                 **Locatie: TBA**
+                 **Locatie: TBA**\n
                  -
                  """ 
         Activiteit("### Borrel XL",Descr_string_7,"BorrelXL",7)
